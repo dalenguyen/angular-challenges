@@ -2,7 +2,9 @@
   "name": "@angular-challenges/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "e2e": "npx nx e2e challenges-e2e"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.1.0",
