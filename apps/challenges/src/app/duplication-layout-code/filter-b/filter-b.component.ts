@@ -1,31 +1,29 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule, UntypedFormControl } from '@angular/forms';
+import { FilterLayoutComponent } from '../filter-layout.component';
+import { FilterBaseDirective } from '../filter-base';
 
 @Component({
   selector: 'angular-challenges-filter-b',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
   template: `
-    <section>
+    <angular-challenges-filter-layout
+      [title]="title()"
+      [descriptions]="descriptions()"
+      [customForm]="customForm"
+    />
+
+    <ng-template #customForm>
       <div>
-        <h2>Filter B</h2>
+        <textarea #filterInput></textarea>
       </div>
 
-      <div>
-        <p>Find something by filter B</p>
-        <input [formControl]="filterB" />
-      </div>
-
-      <button (click)="addFilterB()">Apply Filter</button>
-    </section>
+      <button (click)="addFilter(filterInput.value)">Run Filter</button>
+    </ng-template>
   `,
+  imports: [CommonModule, FilterLayoutComponent],
 })
-export class FilterBComponent {
-  filterB = new UntypedFormControl();
-  @Output() filterValue = new EventEmitter();
-
-  addFilterB(): void {
-    this.filterValue.emit(this.filterB.value);
-  }
+export class FilterBComponent extends FilterBaseDirective {
+  title = signal('Filter B');
+  descriptions = signal(['Find something by filter B']);
 }
