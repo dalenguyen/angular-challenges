@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start": "npx nx serve challenges",
     "e2e": "npx nx e2e challenges-e2e"
   },
   "private": true,

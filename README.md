@@ -11,6 +11,10 @@ This project is open-source, fell free to contribute to this.
 ## Run the application
 
 ```
+npm start 
+
+OR 
+
 npx nx serve challenges
 ```
 

@@ -16,6 +16,8 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/challenges/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
+        "inlineTemplate": true,
+        "inlineStyle": true,
         "assets": [
           "apps/challenges/src/favicon.ico",
           "apps/challenges/src/assets"
@@ -54,7 +56,8 @@
           "buildTarget": "challenges:build:production"
         },
         "development": {
-          "buildTarget": "challenges:build:development"
+          "buildTarget": "challenges:build:development",
+          "port": 4201
         }
       },
       "defaultConfiguration": "development"

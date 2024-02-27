@@ -6,4 +6,9 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./duplication-layout-code/duplication-layout-code.component'),
   },
+  {
+    path: 'control-child-layout',
+    loadComponent: () =>
+      import('./control-child-layout/control-child-layout.component'),
+  },
 ];

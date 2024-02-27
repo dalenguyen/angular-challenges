@@ -1,11 +1,22 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterLinkWithHref, RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, RouterLinkWithHref],
   selector: 'angular-challenges-root',
-  template: ` <h1>Angular Challenges</h1>
-    <router-outlet />`,
+  template: ` 
+    <h1>Angular Challenges</h1>
+    <div>
+      <aside>
+        <ul>
+          <li><a routerLink="duplication-code-layout">Duplicate Code Layout</a></li>
+          <li><a routerLink="control-child-layout">Control Child Layout</a></li>
+        </ul>
+      </aside>
+      <main>
+        <router-outlet />
+      </main>
+    </div>`
 })
 export class AppComponent {}
