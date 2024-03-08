@@ -16,8 +16,6 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/challenges/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "inlineTemplate": true,
-        "inlineStyle": true,
         "assets": [
           "apps/challenges/src/favicon.ico",
           "apps/challenges/src/assets"

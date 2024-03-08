@@ -12,6 +12,7 @@ import { RouterLinkWithHref, RouterModule } from '@angular/router';
         <ul>
           <li><a routerLink="duplication-code-layout">Duplicate Code Layout</a></li>
           <li><a routerLink="control-child-layout">Control Child Layout</a></li>
+          <li><a routerLink="multilevel-data-passing">Multilevel Data Passing</a></li>
         </ul>
       </aside>
       <main>
