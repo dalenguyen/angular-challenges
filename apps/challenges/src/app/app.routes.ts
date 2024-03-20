@@ -16,4 +16,11 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./multilevel-data-passing/multilevel-data-passing.component'),
   },
+  {
+    path: 'access-grandchild-component',
+    loadComponent: () =>
+      import(
+        './access-grandchild-component/access-grandchild-component.component'
+      ),
+  },
 ];
