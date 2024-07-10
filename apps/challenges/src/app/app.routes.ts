@@ -23,4 +23,9 @@ export const appRoutes: Route[] = [
         './access-grandchild-component/access-grandchild-component.component'
       ),
   },
+  {
+    path: 'material-tabs-rendering',
+    loadComponent: () =>
+      import('./material-tabs-rendering/material-tabs-rendering.component'),
+  },
 ];

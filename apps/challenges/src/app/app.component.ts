@@ -21,6 +21,9 @@ import { RouterLinkWithHref, RouterModule } from '@angular/router';
               >Access Grandchild Component</a
             >
           </li>
+          <li>
+            <a routerLink="material-tabs-rendering">Material Tabs Rendering</a>
+          </li>
         </ul>
       </aside>
       <main>
