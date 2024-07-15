@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { MldpGrandChildrenComponent } from '../mldp-grand-children/mldp-grand-children.component';
 
@@ -9,7 +8,7 @@ import { MldpGrandChildrenComponent } from '../mldp-grand-children/mldp-grand-ch
     <h3>Children</h3>
     <angular-challenges-mldp-grand-children [data]="data()" />
   `,
-  imports: [CommonModule, MldpGrandChildrenComponent],
+  imports: [MldpGrandChildrenComponent],
 })
 export class MldpChildrenComponent {
   data = input.required<string>();

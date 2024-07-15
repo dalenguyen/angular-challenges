@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MldpChildrenComponent } from './mldp-children/mldp-children.component';
 
@@ -35,6 +34,6 @@ import { MldpChildrenComponent } from './mldp-children/mldp-children.component';
     <h2>ROOT</h2>
     <angular-challenges-mldp-children [data]="'ROOT'" />
   `,
-  imports: [CommonModule, MldpChildrenComponent],
+  imports: [MldpChildrenComponent],
 })
 export default class MultilevelDataPassingComponent {}
