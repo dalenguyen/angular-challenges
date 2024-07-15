@@ -16,14 +16,13 @@ import { MldpChildrenComponent } from './mldp-children/mldp-children.component';
         when we have a multilevel component hierarchy. Consider the following
         scenario:
       </p>
-      <ul>
-        <li>1. Grandparent Component (A): Contains a variable x.</li>
-        <li>
-          2. Parent Component (B): Receives x from the grandparent and needs to
+      <ol>
+        <li>Grandparent Component (A): Contains a variable x.</li>
+        <li>Parent Component (B): Receives x from the grandparent and needs to
           pass it to its child component.
         </li>
-        <li>3. Child Component (C): Expects to receive x from the parent.</li>
-      </ul>
+        <li>Child Component (C): Expects to receive x from the parent.</li>
+      </ol>
 
       Design an efficient and maintainable approach to achieve multilevel data
       passing from the grandparent component (A) to the child component (C) in
@@ -36,4 +35,4 @@ import { MldpChildrenComponent } from './mldp-children/mldp-children.component';
   `,
   imports: [MldpChildrenComponent],
 })
-export default class MultilevelDataPassingComponent {}
+export default class MultilevelDataPassingComponent { }
