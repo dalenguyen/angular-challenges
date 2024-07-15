@@ -6,7 +6,7 @@ The challenges are organized under `apps/challenges/src/app` folder. For example
 
 If you have a better solution to a problem, you can help to improve it by creating a PR or a discussion to discuss it further.
 
-This project is open-source, fell free to contribute to this.
+This project is open-source, feel free to contribute to this.
 
 ## Run the application
 
